@@ -16,33 +16,33 @@ export default function Navbar() {
 
   return (
     <motion.header
-      initial={{ y: -70, opacity: 0 }}
+      initial={{ y: -60, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
       className="fixed top-0 left-0 w-full z-50 bg-[#0b3a35] text-white shadow-md"
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 h-24 flex items-center justify-between relative">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between relative">
 
-        {/* ✅ LEFT — Logo */}
+        {/* ✅ Logo */}
         <a href="#home" className="flex items-center gap-3">
           <img
             src={logoIcon}
             alt="QUBA Logo"
-            className="h-12 w-auto object-contain"
+            className="h-10 w-auto"
           />
           <div className="leading-tight">
-            <h1 className="text-2xl font-bold tracking-wide">
+            <h1 className="text-xl font-semibold tracking-wide">
               QUBA
             </h1>
-            <p className="text-[10px] tracking-[0.25em] text-gray-300">
+            <p className="text-[9px] tracking-[0.25em] text-gray-300">
               FOREIGN EMPLOYMENT <br />
               AGENT PLC
             </p>
           </div>
         </a>
 
-        {/* ✅ CENTER — Navigation Links */}
-        <nav className="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-10 text-sm font-medium">
+        {/* ✅ Center Navigation */}
+        <nav className="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-8 text-sm font-medium">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -54,11 +54,11 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* ✅ RIGHT — CTA Button */}
+        {/* ✅ Right CTA */}
         <div className="hidden lg:block">
           <a
             href="#contact"
-            className="px-7 py-2.5 border border-white rounded-full hover:bg-white hover:text-[#0b3a35] transition duration-300 font-medium"
+            className="px-6 py-2 border border-white rounded-full text-sm hover:bg-white hover:text-[#0b3a35] transition duration-300"
           >
             Book a Consultation
           </a>
@@ -96,7 +96,7 @@ export default function Navbar() {
 
             <a
               href="#contact"
-              className="inline-block mt-4 px-6 py-2 border border-white rounded-full hover:bg-white hover:text-[#0b3a35] transition"
+              className="inline-block mt-4 px-6 py-2 border border-white rounded-full text-sm hover:bg-white hover:text-[#0b3a35] transition"
             >
               Book a Consultation
             </a>
