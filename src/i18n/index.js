@@ -92,9 +92,7 @@ const resources = {
         },
       },
 
-      // ✅ IMPORTANT FIX:
-      // Your Navbar already uses `services: "Services"` (string),
-      // so we add these flat dot-keys so `t("services.title")` works.
+      // ✅ FIX: dotted keys for Services section (because `services` is a NAV string)
       "services.kicker": "WHAT WE DO",
       "services.title": "Everything You Need for a Successful International Move",
 
@@ -122,7 +120,7 @@ const resources = {
       "services.cards.support.desc":
         "Continued assistance throughout your contract and renewals when needed.",
 
-      // ✅ DESTINATIONS SECTION (no conflict with navbar key "destinations")
+      // ✅ DESTINATIONS SECTION
       destinationsSection: {
         title: "Where We Place Ethiopian Talent",
         subtitle:
@@ -140,6 +138,151 @@ const resources = {
         om: "Oman",
         jo: "Jordan",
         lb: "Lebanon",
+      },
+
+      // ✅ ABOUT SECTION
+      aboutSection: {
+        kicker: "WHY QUBA",
+        title: "Why Thousands of Ethiopians Trust QUBA",
+        quote:
+          "We don’t just find you a job. We build your pathway step by step, document by document, until you land safely.",
+        team: {
+          name: "QUBA Team",
+          role: "Foreign Employment Specialists",
+        },
+        bullets: {
+          b1: "Fully Licensed & Government Registered",
+          b2: "No Upfront Hidden Fees Ever",
+          b3: "Amharic-Speaking Advisors",
+          b4: "Legal Contract Signed for Every Placement",
+          b5: "Dedicated Support Team After Placement",
+        },
+      },
+
+      // ✅ TESTIMONIALS SECTION
+      testimonialsSection: {
+        title: "Workers Who Found Their Path With QUBA",
+        t1: {
+          quote:
+            "QUBA handled everything — my paperwork, contract, even orientation. I arrived in Riyadh feeling confident and prepared.",
+          name: "Selamawit Tadesse",
+          meta: "Placed in Saudi Arabia · Domestic Professional",
+        },
+        t2: {
+          quote:
+            "The team explained every step in Amharic. There were no surprises, no hidden fees. I trust them completely.",
+          name: "Yonas Bekele",
+          meta: "Placed in UAE · Hospitality",
+        },
+        t3: {
+          quote:
+            "Even after I started working in Doha, QUBA stayed in contact. When I had a contract question, they were there.",
+          name: "Hanan Mohammed",
+          meta: "Placed in Qatar · Healthcare Support",
+        },
+        t4: {
+          quote:
+            "Everything was legal and organized. The process was clear and the support team responded quickly.",
+          name: "Selamawit Tadesse",
+          meta: "Placed in Saudi Arabia · Domestic Professional",
+        },
+        t5: {
+          quote:
+            "Very professional communication and real employer verification. I recommend QUBA to anyone applying abroad.",
+          name: "Yonas Bekele",
+          meta: "Placed in UAE · Hospitality",
+        },
+      },
+
+      // ✅ CONTACT CTA (center CTA section)
+      contactSection: {
+        title: "Ready to Start Your International Career?",
+        subtitle:
+          "Your verified opportunity is one application away. Our team will guide you from first consultation to successful placement.",
+        button: "Begin Application Now",
+        or: "Or WhatsApp us directly:",
+        whatsapp: "WhatsApp",
+      },
+
+      // ✅ FAQ
+      faqSection: {
+        titleLine1: "Frequently Asked",
+        titleLine2: "Questions",
+        items: {
+          q1: {
+            q: "Is QUBA a licensed foreign employment agency in Ethiopia?",
+            a: "Yes. QUBA is a licensed and government-registered foreign employment agency. We follow legal and documented procedures for every placement.",
+          },
+          q2: {
+            q: "What documents do I need to apply?",
+            a: "Typically: a valid ID/passport (if available), CV, photos, and any relevant certificates. Requirements may vary by destination and job type.",
+          },
+          q3: {
+            q: "How long does the full process take?",
+            a: "Timelines vary by country and employer, but we keep you updated at every stage from screening to visa processing and deployment.",
+          },
+          q4: {
+            q: "Are there any fees I pay upfront?",
+            a: "We clearly explain any costs before you proceed. We do not support hidden charges and we prioritize transparency.",
+          },
+          q5: {
+            q: "Which countries can I work in through QUBA?",
+            a: "We place workers across the Gulf and beyond depending on demand and verified employer partnerships.",
+          },
+          q6: {
+            q: "What happens after I'm placed abroad?",
+            a: "Our support continues after placement. We help with communication, renewals (where applicable), and guidance during your contract.",
+          },
+          q7: {
+            q: "Can I apply if I have no prior international work experience?",
+            a: "Yes. Many roles do not require prior overseas experience. We assess your profile and match you with suitable opportunities.",
+          },
+          q8: {
+            q: "How do I verify a job offer is legitimate?",
+            a: "Only accept offers processed through QUBA’s official channels. We provide verified employer details and legal documentation for every placement.",
+          },
+        },
+      },
+
+      // ✅ APPLY FORM + GET IN TOUCH (form section)
+      applySection: {
+        formTitle: "Start Your Application",
+        formSubtitle: "Fill out the form and our team will reach out within 24 hours.",
+        fields: {
+          fullName: "Full Name *",
+          phone: "Phone Number *",
+          email: "Email",
+          whatsapp: "WhatsApp Number",
+          destination: "Desired Destination",
+          category: "Job Category",
+          message: "Message / Additional Info",
+        },
+        placeholders: {
+          fullName: "Your full name",
+          phone: "e.g. +251 9xx xxx xxx",
+          email: "you@example.com",
+          whatsapp: "e.g. +251 9xx xxx xxx",
+          destination: "Select a country",
+          category: "Select a category",
+          message: "Tell us about your experience and preferred role...",
+        },
+        categories: {
+          domestic: "Domestic Work",
+          hospitality: "Hospitality",
+          healthcare: "Healthcare Support",
+          construction: "Construction / Labor",
+          other: "Other",
+        },
+        submit: "Submit Application →",
+        note: "Tip: When you submit, we’ll open WhatsApp with your details to send directly.",
+        touchTitle: "Get in Touch",
+        touchSubtitle: "Prefer to talk? Reach us directly through any of these channels.",
+        touch: {
+          address: "Address",
+          phone: "Phone",
+          email: "Email",
+          whatsappCta: "Message us on WhatsApp →",
+        },
       },
     },
   },
@@ -234,7 +377,7 @@ const resources = {
         },
       },
 
-      // ✅ FIX: dotted keys for Services section
+      // dotted keys for Services section
       "services.kicker": "የምንሰራው",
       "services.title": "ለተሳካ ዓለም አቀፍ መንቀሳቀስ የሚያስፈልግዎ ሁሉ",
 
@@ -262,10 +405,11 @@ const resources = {
       "services.cards.support.desc":
         "በውልዎ ጊዜ ቀጣይ ድጋፍ እና በፈለጉ ጊዜ እድሳት እርዳታ።",
 
-      // ✅ DESTINATIONS SECTION
+      // DESTINATIONS SECTION
       destinationsSection: {
         title: "የኢትዮጵያውያንን ብቃት የምንመድብባቸው አገራት",
-        subtitle: "በግልፍ እና ከዚያ በላይ በ12+ ሀገራት የሚገኙ አጋር አሰሪዎች",
+        subtitle:
+          "በግልፍ እና ከዚያ በላይ በ12+ ሀገራት የሚገኙ አጋር አሰሪዎች",
         button: "ሁሉንም መዳረሻዎች ይመልከቱ",
       },
 
@@ -278,6 +422,147 @@ const resources = {
         om: "ኦማን",
         jo: "ጆርዳን",
         lb: "ሊባኖስ",
+      },
+
+      // ABOUT SECTION
+      aboutSection: {
+        kicker: "ለምን QUBA",
+        title: "ሺዎች የኢትዮጵያውያን ለምን QUBAን ይተማመናሉ",
+        quote:
+          "ስራ ብቻ አንፈልግልዎትም፤ መንገድዎን ደረጃ በደረጃ፣ ሰነድ በሰነድ እስክትደርሱ ድረስ እንገንባለን።",
+        team: { name: "የQUBA ቡድን", role: "የውጭ ስራ ባለሙያዎች" },
+        bullets: {
+          b1: "ሙሉ ፈቃድ ያለው እና በመንግስት የተመዘገበ",
+          b2: "ምንም የተሰወረ ክፍያ በቅድሚያ የለም",
+          b3: "አማርኛ የሚናገሩ አማካሪዎች",
+          b4: "ለእያንዳንዱ መመደብ ህጋዊ ውል ይፈርማል",
+          b5: "ከመቀጠር በኋላ የቀጣይ ድጋፍ ቡድን",
+        },
+      },
+
+      // TESTIMONIALS SECTION
+      testimonialsSection: {
+        title: "ከQUBA ጋር መንገዳቸውን ያገኙ ሰራተኞች",
+        t1: {
+          quote:
+            "QUBA ሁሉንም ነገር አዘጋጅቶልኝ — ሰነዶቼን፣ ውሌን እና ኦሪየንቴሽንን። ሪያድ በመድረሴ ራሴን ተዘጋጅቼ ሰማሁ።",
+          name: "Selamawit Tadesse",
+          meta: "በሳውዲ አረቢያ ተቀጥሯል · የቤት ስራ",
+        },
+        t2: {
+          quote:
+            "ቡድኑ እያንዳንዱን ደረጃ በአማርኛ በግልጽ አስረዳልኝ። ምንም ድንገተኛ ክፍያ አልነበረም።",
+          name: "Yonas Bekele",
+          meta: "በዩኤኢ ተቀጥሯል · ሆስፒታሊቲ",
+        },
+        t3: {
+          quote:
+            "ዶሃ ስራ ከጀመርኩ በኋላም QUBA ግንኙነት አልቋል። የውል ጥያቄ ሲኖረኝ ፈጣን መልስ ሰጡኝ።",
+          name: "Hanan Mohammed",
+          meta: "በኳታር ተቀጥሯል · የጤና ድጋፍ",
+        },
+        t4: {
+          quote: "ሂደቱ ህጋዊ እና በስርዓት ነበር። ቡድኑ ፈጣን ምላሽ ይሰጣል።",
+          name: "Selamawit Tadesse",
+          meta: "በሳውዲ አረቢያ ተቀጥሯል · የቤት ስራ",
+        },
+        t5: {
+          quote:
+            "በጣም ሙያዊ ግንኙነት እና እውነተኛ የአሰሪ ማረጋገጫ አለ። ለውጭ ስራ ለሚያመለክቱ ሁሉ እመክራለሁ።",
+          name: "Yonas Bekele",
+          meta: "በዩኤኢ ተቀጥሯል · ሆስፒታሊቲ",
+        },
+      },
+
+      // CONTACT CTA
+      contactSection: {
+        title: "ዓለም አቀፍ ሙያዎን ለመጀመር ዝግጁ ነዎት?",
+        subtitle:
+          "የተረጋገጠ እድልዎ ከአንድ ማመልከቻ ብቻ ይለያል። ቡድናችን ከመጀመሪያ ምክክር እስከ ስኬታማ መቀጠር ድረስ ይመራዎታል።",
+        button: "አሁን መመልከቻ ጀምር",
+        or: "ወይም በዋትስአፕ ቀጥታ ያናግሩን:",
+        whatsapp: "WhatsApp",
+      },
+
+      // FAQ
+      faqSection: {
+        titleLine1: "ተደጋጋሚ የሚጠየቁ",
+        titleLine2: "ጥያቄዎች",
+        items: {
+          q1: {
+            q: "QUBA በኢትዮጵያ የተፈቀደ የውጭ ስራ ኤጀንሲ ነው?",
+            a: "አዎ። QUBA ፈቃድ ያለው እና በመንግስት የተመዘገበ የውጭ ስራ ኤጀንሲ ነው። ሁሉም መመደብ በህጋዊ እና በሰነድ የተደገፈ ሂደት ይከናወናል።",
+          },
+          q2: {
+            q: "ለመመልከት ምን ሰነዶች ያስፈልጋሉ?",
+            a: "በአጠቃላይ፡ መታወቂያ/ፓስፖርት (ካለ)፣ CV፣ ፎቶ፣ እና ተዛማጅ ማረጋገጫ ሰነዶች። መስፈርቶች በሀገር እና በስራ ዓይነት ሊለያዩ ይችላሉ።",
+          },
+          q3: {
+            q: "ሙሉ ሂደቱ ምን ያህል ጊዜ ይወስዳል?",
+            a: "ጊዜው በመዳረሻ ሀገር እና በአሰሪ ሂደት ይለያያል፣ ነገር ግን ከመጀመሪያ እስከ መጨረሻ ድረስ ሁሉንም እንዲያውቁ እንከታተላለን።",
+          },
+          q4: {
+            q: "በቅድሚያ መክፈል ያለብኝ ክፍያ አለ?",
+            a: "ማንኛውንም ወጪ ከመጀመርዎ በፊት በግልጽ እናብራራለን። የተሰወረ ክፍያ አንደግፍም።",
+          },
+          q5: {
+            q: "በQUBA በኩል ወደ የት ሀገራት መሄድ እችላለሁ?",
+            a: "በግልፍ እና ከዚያ በላይ በተረጋገጡ አሰሪዎች እና አጋሮች መሰረት መመደብ እናደርጋለን።",
+          },
+          q6: {
+            q: "ውጭ ከተቀጠርኩ በኋላ ምን ይሆናል?",
+            a: "ድጋፋችን ከመቀጠር በኋላም ይቀጥላል። እንደ ግንኙነት፣ መመሪያ እና እድሳት ጉዳዮች ድጋፍ እንሰጣለን።",
+          },
+          q7: {
+            q: "የውጭ ልምድ ካልነበረኝ መመልከት እችላለሁ?",
+            a: "አዎ። ብዙ ስራዎች የቀድሞ የውጭ ልምድ አይጠይቁም። ፕሮፋይልዎን እንገምግማለን እና ተስማሚ እድሎችን እንጣመራለን።",
+          },
+          q8: {
+            q: "የስራ እድል እውነተኛ መሆኑን እንዴት እረጋግጣለሁ?",
+            a: "በQUBA የተፈቀዱ መንገዶች ብቻ ይጠቀሙ። በእያንዳንዱ መመደብ የተረጋገጠ አሰሪ እና ህጋዊ ሰነዶች እንሰጣለን።",
+          },
+        },
+      },
+
+      // APPLY FORM
+      applySection: {
+        formTitle: "መመልከቻዎን ጀምሩ",
+        formSubtitle: "ቅጹን ይሙሉ እና ቡድናችን በ24 ሰዓት ውስጥ ይገናኝዎታል።",
+        fields: {
+          fullName: "ሙሉ ስም *",
+          phone: "ስልክ ቁጥር *",
+          email: "ኢሜይል",
+          whatsapp: "WhatsApp ቁጥር",
+          destination: "የሚፈልጉት መዳረሻ",
+          category: "የስራ ዘርፍ",
+          message: "መልዕክት / ተጨማሪ መረጃ",
+        },
+        placeholders: {
+          fullName: "ሙሉ ስምዎ",
+          phone: "ለምሳሌ፡ +251 9xx xxx xxx",
+          email: "you@example.com",
+          whatsapp: "ለምሳሌ፡ +251 9xx xxx xxx",
+          destination: "ሀገር ይምረጡ",
+          category: "ዘርፍ ይምረጡ",
+          message: "ልምድዎን እና የሚፈልጉትን ስራ ይጻፉ...",
+        },
+        categories: {
+          domestic: "የቤት ስራ",
+          hospitality: "ሆስፒታሊቲ",
+          healthcare: "የጤና ድጋፍ",
+          construction: "ግንባታ / የእጅ ስራ",
+          other: "ሌላ",
+        },
+        submit: "መመልከቻ ላክ →",
+        note: "ማስታወሻ፡ ሲላኩ ዝርዝሮትን ይዞ WhatsApp ይከፈታል።",
+        touchTitle: "አግኙን",
+        touchSubtitle: "መነጋገር ትመርጣላችሁ? በእነዚህ መንገዶች ያግኙን።",
+        touch: {
+          address: "አድራሻ",
+          phone: "ስልክ",
+          email: "ኢሜይል",
+          whatsappCta: "በWhatsApp መልዕክት ይላኩ →",
+        },
       },
     },
   },
@@ -331,7 +616,7 @@ const resources = {
           },
           s4: {
             title: "التحضير قبل السفر",
-            desc: "توجيه وتدريب ثقافي وتنسيق ترتيبات السفر.",
+            desc: "توجيه وتدريب ثقافي وترتيبات السفر قبل المغادرة.",
           },
           s5: {
             title: "التوظيف والدعم المستمر",
@@ -372,7 +657,7 @@ const resources = {
         },
       },
 
-      // ✅ FIX: dotted keys for Services section
+      // dotted keys for Services section
       "services.kicker": "ماذا نقدم",
       "services.title": "كل ما تحتاجه للانتقال الدولي بنجاح",
 
@@ -381,7 +666,8 @@ const resources = {
         "خدمة شاملة للتوظيف مع أصحاب عمل دوليين موثوقين عبر عدة قطاعات.",
 
       "services.cards.guidance.title": "إرشاد واستشارات للمرشحين",
-      "services.cards.guidance.desc": "نصائح مخصصة ودعم في كل مرحلة من رحلتك.",
+      "services.cards.guidance.desc":
+        "نصائح مخصصة ودعم في كل مرحلة من رحلتك.",
 
       "services.cards.employer.title": "التنسيق مع أصحاب العمل",
       "services.cards.employer.desc":
@@ -399,10 +685,11 @@ const resources = {
       "services.cards.support.desc":
         "دعم مستمر طوال مدة العقد وتجديداته عند الحاجة.",
 
-      // ✅ DESTINATIONS SECTION
+      // DESTINATIONS SECTION
       destinationsSection: {
         title: "أين نوظّف الكفاءات الإثيوبية",
-        subtitle: "شراكات فعّالة مع أصحاب عمل في أكثر من 12 دولة في الخليج وما بعده",
+        subtitle:
+          "شراكات فعّالة مع أصحاب عمل في أكثر من 12 دولة في الخليج وما بعده",
         button: "عرض كل الوجهات",
       },
 
@@ -416,6 +703,148 @@ const resources = {
         jo: "الأردن",
         lb: "لبنان",
       },
+
+      // ABOUT SECTION
+      aboutSection: {
+        kicker: "لماذا QUBA",
+        title: "لماذا يثق آلاف الإثيوبيين بـ QUBA",
+        quote:
+          "نحن لا نجد لك عملاً فقط. نبني مسارك خطوة بخطوة، ووثيقة بوثيقة، حتى تصل بأمان.",
+        team: { name: "فريق QUBA", role: "متخصصو التوظيف الخارجي" },
+        bullets: {
+          b1: "مرخّص بالكامل ومسجّل حكومياً",
+          b2: "لا توجد رسوم مخفية مسبقاً",
+          b3: "مستشارون يتحدثون الأمهرية",
+          b4: "عقد قانوني لكل عملية توظيف",
+          b5: "فريق دعم مخصص بعد التوظيف",
+        },
+      },
+
+      // TESTIMONIALS SECTION
+      testimonialsSection: {
+        title: "عمّال وجدوا طريقهم مع QUBA",
+        t1: {
+          quote:
+            "تكفلت QUBA بكل شيء — الأوراق والعقد وحتى التوجيه. وصلت إلى الرياض وأنا واثق ومستعد.",
+          name: "Selamawit Tadesse",
+          meta: "تم التوظيف في السعودية · عمل منزلي",
+        },
+        t2: {
+          quote:
+            "شرح الفريق كل خطوة بوضوح. لم تكن هناك مفاجآت أو رسوم مخفية. أثق بهم تماماً.",
+          name: "Yonas Bekele",
+          meta: "تم التوظيف في الإمارات · الضيافة",
+        },
+        t3: {
+          quote:
+            "حتى بعد أن بدأت العمل في الدوحة، بقيت QUBA على تواصل. عندما كان لدي سؤال حول العقد، كانوا موجودين.",
+          name: "Hanan Mohammed",
+          meta: "تم التوظيف في قطر · دعم صحي",
+        },
+        t4: {
+          quote:
+            "كل شيء كان قانونياً ومنظماً. العملية كانت واضحة وفريق الدعم يرد بسرعة.",
+          name: "Selamawit Tadesse",
+          meta: "تم التوظيف في السعودية · عمل منزلي",
+        },
+        t5: {
+          quote:
+            "تواصل احترافي وتحقق حقيقي من أصحاب العمل. أنصح بـ QUBA لكل من يتقدم للعمل خارجاً.",
+          name: "Yonas Bekele",
+          meta: "تم التوظيف في الإمارات · الضيافة",
+        },
+      },
+
+      // CONTACT CTA
+      contactSection: {
+        title: "هل أنت مستعد لبدء مسيرتك المهنية الدولية؟",
+        subtitle:
+          "فرصتك الموثوقة على بُعد طلب واحد. سيرشدك فريقنا من أول استشارة حتى التوظيف الناجح.",
+        button: "ابدأ التقديم الآن",
+        or: "أو تواصل معنا عبر واتساب مباشرة:",
+        whatsapp: "WhatsApp",
+      },
+
+      // FAQ
+      faqSection: {
+        titleLine1: "الأسئلة",
+        titleLine2: "الشائعة",
+        items: {
+          q1: {
+            q: "هل QUBA وكالة توظيف خارجي مرخصة في إثيوبيا؟",
+            a: "نعم. QUBA وكالة مرخّصة ومسجّلة حكومياً، ونتبع إجراءات قانونية موثّقة لكل عملية توظيف.",
+          },
+          q2: {
+            q: "ما هي المستندات المطلوبة للتقديم؟",
+            a: "عادةً: هوية/جواز (إن وُجد)، سيرة ذاتية، صور، وأي شهادات ذات صلة. قد تختلف المتطلبات حسب الدولة ونوع الوظيفة.",
+          },
+          q3: {
+            q: "كم تستغرق العملية كاملة؟",
+            a: "تختلف المدة حسب الدولة وصاحب العمل، ونقوم بإطلاعك على كل خطوة من الفرز حتى إصدار التأشيرة والسفر.",
+          },
+          q4: {
+            q: "هل توجد رسوم أدفعها مسبقاً؟",
+            a: "نوضح أي تكاليف قبل البدء. لا ندعم الرسوم المخفية ونلتزم بالشفافية.",
+          },
+          q5: {
+            q: "ما الدول المتاحة للعمل عبر QUBA؟",
+            a: "نوفّر فرصاً في دول الخليج وما بعدها حسب الطلب وشراكات أصحاب العمل الموثوقة.",
+          },
+          q6: {
+            q: "ماذا يحدث بعد توظيفي في الخارج؟",
+            a: "يستمر دعمنا بعد التوظيف، بما في ذلك التواصل والإرشاد والمساعدة في التجديدات عند الحاجة.",
+          },
+          q7: {
+            q: "هل يمكنني التقديم بدون خبرة عمل دولية سابقة؟",
+            a: "نعم. العديد من الوظائف لا تتطلب خبرة خارجية. نقيم ملفك ونطابقك مع فرص مناسبة.",
+          },
+          q8: {
+            q: "كيف أتأكد أن عرض العمل حقيقي؟",
+            a: "لا تقبل إلا العروض عبر قنوات QUBA الرسمية. نوفر بيانات صاحب العمل الموثّق والوثائق القانونية لكل عملية توظيف.",
+          },
+        },
+      },
+
+      // APPLY FORM
+      applySection: {
+        formTitle: "ابدأ طلبك",
+        formSubtitle: "املأ النموذج وسيتواصل فريقنا معك خلال 24 ساعة.",
+        fields: {
+          fullName: "الاسم الكامل *",
+          phone: "رقم الهاتف *",
+          email: "البريد الإلكتروني",
+          whatsapp: "رقم واتساب",
+          destination: "الوجهة المطلوبة",
+          category: "فئة الوظيفة",
+          message: "رسالة / معلومات إضافية",
+        },
+        placeholders: {
+          fullName: "اسمك الكامل",
+          phone: "مثال: +251 9xx xxx xxx",
+          email: "you@example.com",
+          whatsapp: "مثال: +251 9xx xxx xxx",
+          destination: "اختر دولة",
+          category: "اختر فئة",
+          message: "أخبرنا عن خبرتك والوظيفة التي تفضلها...",
+        },
+        categories: {
+          domestic: "عمل منزلي",
+          hospitality: "الضيافة",
+          healthcare: "دعم صحي",
+          construction: "إنشاءات / أعمال يدوية",
+          other: "أخرى",
+        },
+        submit: "إرسال الطلب →",
+        note: "ملاحظة: عند الإرسال سنفتح واتساب مع بياناتك لإرسالها مباشرة.",
+        touchTitle: "تواصل معنا",
+        touchSubtitle: "تفضل المكالمة؟ تواصل معنا عبر أي قناة من هذه القنوات.",
+        touch: {
+          address: "العنوان",
+          phone: "الهاتف",
+          email: "البريد الإلكتروني",
+          whatsappCta: "راسلنا على واتساب →",
+        },
+      },
     },
   },
 };
@@ -426,6 +855,9 @@ i18n.use(initReactI18next).init({
   fallbackLng: "en",
   supportedLngs: ["en", "am", "ar"],
   interpolation: { escapeValue: false },
+
+  // Helps when using dotted keys + mixed structures
+  ignoreJSONStructure: true,
 });
 
 export default i18n;

@@ -3,6 +3,10 @@ import Hero from "./sections/Hero";
 import Process from "./sections/Process";
 import Services from "./sections/Services";
 import Destinations from "./sections/Destinations";
+import About from "./sections/About";
+import Contact from "./sections/Contact";
+import FAQ from "./sections/FAQ";
+import Apply from "./sections/Apply";
 function App() {
   return (
     <div>
@@ -12,6 +16,10 @@ function App() {
         <Process />
         <Services />
         <Destinations />
+        <About />
+        <Contact />
+        <FAQ />
+        <Apply />
       </main>
     </div>
   );
