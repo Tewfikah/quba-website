@@ -7,10 +7,12 @@ import About from "./sections/About";
 import Contact from "./sections/Contact";
 import FAQ from "./sections/FAQ";
 import Apply from "./sections/Apply";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div>
       <Navbar />
+     
       <main className="pt-20">
         <Hero />
         <Process />
@@ -20,7 +22,9 @@ function App() {
         <Contact />
         <FAQ />
         <Apply />
+       
       </main>
+        <Footer />
     </div>
   );
 }

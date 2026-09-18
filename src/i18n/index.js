@@ -60,7 +60,7 @@ const resources = {
         },
       },
 
-      // (Optional) your old servicesSection object (can stay)
+      // (Optional) old servicesSection object (can stay)
       servicesSection: {
         kicker: "WHAT WE DO",
         title: "Everything You Need for a Successful International Move",
@@ -92,7 +92,7 @@ const resources = {
         },
       },
 
-      // ✅ FIX: dotted keys for Services section (because `services` is a NAV string)
+      // ✅ dotted keys for Services section (because `services` is NAV string)
       "services.kicker": "WHAT WE DO",
       "services.title": "Everything You Need for a Successful International Move",
 
@@ -128,7 +128,6 @@ const resources = {
         button: "View all destinations",
       },
 
-      // Country names used by Destination cards
       countries: {
         sa: "Saudi Arabia",
         uae: "UAE",
@@ -244,10 +243,11 @@ const resources = {
         },
       },
 
-      // ✅ APPLY FORM + GET IN TOUCH (form section)
+      // ✅ APPLY FORM + GET IN TOUCH
       applySection: {
         formTitle: "Start Your Application",
-        formSubtitle: "Fill out the form and our team will reach out within 24 hours.",
+        formSubtitle:
+          "Fill out the form and our team will reach out within 24 hours.",
         fields: {
           fullName: "Full Name *",
           phone: "Phone Number *",
@@ -276,13 +276,25 @@ const resources = {
         submit: "Submit Application →",
         note: "Tip: When you submit, we’ll open WhatsApp with your details to send directly.",
         touchTitle: "Get in Touch",
-        touchSubtitle: "Prefer to talk? Reach us directly through any of these channels.",
+        touchSubtitle:
+          "Prefer to talk? Reach us directly through any of these channels.",
         touch: {
           address: "Address",
           phone: "Phone",
           email: "Email",
           whatsappCta: "Message us on WhatsApp →",
         },
+      },
+
+      // ✅ FOOTER (FIXED: at root level, NOT inside applySection)
+      footerSection: {
+        tagline: "Trusted Ethiopian Gateway to Global Employment.",
+        quickLinks: "QUICK LINKS",
+        ourServices: "OUR SERVICES",
+        contact: "CONTACT",
+        applyNow: "Apply Now",
+        faq: "FAQ",
+        credit: "Made by SHURUQ Enterprise",
       },
     },
   },
@@ -298,18 +310,13 @@ const resources = {
       contact: "አግኙን",
       book: "ምክክር ያዝ",
 
-      // COMMON
-      common: {
-        learnMore: "ተጨማሪ ይወቁ",
-      },
+      common: { learnMore: "ተጨማሪ ይወቁ" },
 
-      // HERO
       heroTitle1: "የተረጋገጠ መንገድዎ",
       heroTitle2: "ወደ ዓለም አቀፍ ሥራ",
       heroSubtitle:
         "QUBA የኢትዮጵያ ባለሞያዎችን ከተረጋገጡ ዓለም አቀፍ አሰሪዎች ጋር በሰነድ የተሟላ፣ በህጋዊ ሂደት እና በባህላዊ ድጋፍ በእያንዳንዱ ደረጃ ያገናኛል።",
 
-      // STATS
       stats: {
         workers: "የተቀጠሩ ሰራተኞች",
         countries: "መዳረሻ ሀገራት",
@@ -317,7 +324,6 @@ const resources = {
         legal: "ህጋዊ ሂደት",
       },
 
-      // PROCESS
       process: {
         kicker: "ሂደቱ",
         title: "ከማመልከቻ እስከ መቀጠር በ5 ግልጽ ደረጃዎች",
@@ -345,45 +351,18 @@ const resources = {
         },
       },
 
-      // Keep your original object
       servicesSection: {
         kicker: "የምንሰራው",
         title: "ለተሳካ ዓለም አቀፍ መንቀሳቀስ የሚያስፈልግዎ ሁሉ",
-        cards: {
-          overseas: {
-            title: "የውጭ ሀገር ስራ መመደብ",
-            desc: "ከተረጋገጡ ዓለም አቀፍ አሰሪዎች ጋር ከመጀመሪያ እስከ መጨረሻ ድረስ ሙሉ እርዳታ።",
-          },
-          guidance: {
-            title: "ለተመራጮች መመሪያ እና ምክር",
-            desc: "በእያንዳንዱ ደረጃ የግል መመሪያ እና ድጋፍ።",
-          },
-          employer: {
-            title: "ከአሰሪ ጋር መ协调",
-            desc: "ከተመረጡ አሰሪዎች እና አጋር ድርጅቶች ጋር ቀጥታ መ协调።",
-          },
-          legal: {
-            title: "ሰነዶች እና ህጋዊ ሂደት",
-            desc: "ቪዛ፣ ውል፣ ህክምና እና ማረጋገጫ ሰነዶች በህጋዊ መንገድ ሙሉ ማስተናገድ።",
-          },
-          prep: {
-            title: "የመነሻ አዘገጃጀት",
-            desc: "ኦሪየንቴሽን፣ ባህላዊ መመሪያ እና የጉዞ ዝግጅት።",
-          },
-          support: {
-            title: "ከመቀጠር በኋላ ድጋፍ",
-            desc: "በውልዎ ጊዜ ቀጣይ ድጋፍ እና በፈለጉ ጊዜ እድሳት እርዳታ።",
-          },
-        },
+        cards: {},
       },
 
-      // dotted keys for Services section
       "services.kicker": "የምንሰራው",
       "services.title": "ለተሳካ ዓለም አቀፍ መንቀሳቀስ የሚያስፈልግዎ ሁሉ",
 
       "services.cards.overseas.title": "የውጭ ሀገር ስራ መመደብ",
       "services.cards.overseas.desc":
-        "ከተረጋገጡ ዓለም አቀፍ አሰሪዎች ጋር ከመጀመሪያ እስከ መጨረሻ ድረስ ሙሉ እርዳታ።",
+        "ከተረጋገጡ ዓለም አቀፍ አሰሪዎች ጋር ሙሉ ሂደት እርዳታ።",
 
       "services.cards.guidance.title": "ለተመራጮች መመሪያ እና ምክር",
       "services.cards.guidance.desc":
@@ -395,7 +374,7 @@ const resources = {
 
       "services.cards.legal.title": "ሰነዶች እና ህጋዊ ሂደት",
       "services.cards.legal.desc":
-        "ቪዛ፣ ውል፣ ህክምና እና ማረጋገጫ ሰነዶች በህጋዊ መንገድ ሙሉ ማስተናገድ።",
+        "ቪዛ፣ ውል፣ ህክምና እና ማረጋገጫ ሰነዶችን ሙሉ በሙሉ ማስተናገድ።",
 
       "services.cards.prep.title": "የመነሻ አዘገጃጀት",
       "services.cards.prep.desc":
@@ -403,13 +382,11 @@ const resources = {
 
       "services.cards.support.title": "ከመቀጠር በኋላ ድጋፍ",
       "services.cards.support.desc":
-        "በውልዎ ጊዜ ቀጣይ ድጋፍ እና በፈለጉ ጊዜ እድሳት እርዳታ።",
+        "በውልዎ ጊዜ ቀጣይ ድጋፍ እና እድሳት እርዳታ።",
 
-      // DESTINATIONS SECTION
       destinationsSection: {
         title: "የኢትዮጵያውያንን ብቃት የምንመድብባቸው አገራት",
-        subtitle:
-          "በግልፍ እና ከዚያ በላይ በ12+ ሀገራት የሚገኙ አጋር አሰሪዎች",
+        subtitle: "በግልፍ እና ከዚያ በላይ በ12+ ሀገራት የሚገኙ አጋር አሰሪዎች",
         button: "ሁሉንም መዳረሻዎች ይመልከቱ",
       },
 
@@ -424,7 +401,6 @@ const resources = {
         lb: "ሊባኖስ",
       },
 
-      // ABOUT SECTION
       aboutSection: {
         kicker: "ለምን QUBA",
         title: "ሺዎች የኢትዮጵያውያን ለምን QUBAን ይተማመናሉ",
@@ -440,7 +416,6 @@ const resources = {
         },
       },
 
-      // TESTIMONIALS SECTION
       testimonialsSection: {
         title: "ከQUBA ጋር መንገዳቸውን ያገኙ ሰራተኞች",
         t1: {
@@ -474,7 +449,6 @@ const resources = {
         },
       },
 
-      // CONTACT CTA
       contactSection: {
         title: "ዓለም አቀፍ ሙያዎን ለመጀመር ዝግጁ ነዎት?",
         subtitle:
@@ -484,7 +458,6 @@ const resources = {
         whatsapp: "WhatsApp",
       },
 
-      // FAQ
       faqSection: {
         titleLine1: "ተደጋጋሚ የሚጠየቁ",
         titleLine2: "ጥያቄዎች",
@@ -495,36 +468,35 @@ const resources = {
           },
           q2: {
             q: "ለመመልከት ምን ሰነዶች ያስፈልጋሉ?",
-            a: "በአጠቃላይ፡ መታወቂያ/ፓስፖርት (ካለ)፣ CV፣ ፎቶ፣ እና ተዛማጅ ማረጋገጫ ሰነዶች። መስፈርቶች በሀገር እና በስራ ዓይነት ሊለያዩ ይችላሉ።",
+            a: "በአጠቃላይ፡ መታወቂያ/ፓስፖርት (ካለ)፣ CV፣ ፎቶ፣ እና ተዛማጅ ማረጋገጫ ሰነዶች።",
           },
           q3: {
             q: "ሙሉ ሂደቱ ምን ያህል ጊዜ ይወስዳል?",
-            a: "ጊዜው በመዳረሻ ሀገር እና በአሰሪ ሂደት ይለያያል፣ ነገር ግን ከመጀመሪያ እስከ መጨረሻ ድረስ ሁሉንም እንዲያውቁ እንከታተላለን።",
+            a: "ጊዜው በመዳረሻ ሀገር እና በአሰሪ ሂደት ይለያያል።",
           },
           q4: {
             q: "በቅድሚያ መክፈል ያለብኝ ክፍያ አለ?",
-            a: "ማንኛውንም ወጪ ከመጀመርዎ በፊት በግልጽ እናብራራለን። የተሰወረ ክፍያ አንደግፍም።",
+            a: "ማንኛውንም ወጪ ከመጀመርዎ በፊት በግልጽ እናብራራለን።",
           },
           q5: {
             q: "በQUBA በኩል ወደ የት ሀገራት መሄድ እችላለሁ?",
-            a: "በግልፍ እና ከዚያ በላይ በተረጋገጡ አሰሪዎች እና አጋሮች መሰረት መመደብ እናደርጋለን።",
+            a: "በግልፍ እና ከዚያ በላይ በተረጋገጡ አሰሪዎች መሰረት መመደብ እናደርጋለን።",
           },
           q6: {
             q: "ውጭ ከተቀጠርኩ በኋላ ምን ይሆናል?",
-            a: "ድጋፋችን ከመቀጠር በኋላም ይቀጥላል። እንደ ግንኙነት፣ መመሪያ እና እድሳት ጉዳዮች ድጋፍ እንሰጣለን።",
+            a: "ድጋፋችን ከመቀጠር በኋላም ይቀጥላል።",
           },
           q7: {
             q: "የውጭ ልምድ ካልነበረኝ መመልከት እችላለሁ?",
-            a: "አዎ። ብዙ ስራዎች የቀድሞ የውጭ ልምድ አይጠይቁም። ፕሮፋይልዎን እንገምግማለን እና ተስማሚ እድሎችን እንጣመራለን።",
+            a: "አዎ። ብዙ ስራዎች የቀድሞ የውጭ ልምድ አይጠይቁም።",
           },
           q8: {
             q: "የስራ እድል እውነተኛ መሆኑን እንዴት እረጋግጣለሁ?",
-            a: "በQUBA የተፈቀዱ መንገዶች ብቻ ይጠቀሙ። በእያንዳንዱ መመደብ የተረጋገጠ አሰሪ እና ህጋዊ ሰነዶች እንሰጣለን።",
+            a: "በQUBA የተፈቀዱ መንገዶች ብቻ ይጠቀሙ።",
           },
         },
       },
 
-      // APPLY FORM
       applySection: {
         formTitle: "መመልከቻዎን ጀምሩ",
         formSubtitle: "ቅጹን ይሙሉ እና ቡድናችን በ24 ሰዓት ውስጥ ይገናኝዎታል።",
@@ -564,6 +536,17 @@ const resources = {
           whatsappCta: "በWhatsApp መልዕክት ይላኩ →",
         },
       },
+
+      // ✅ FOOTER (AM)
+      footerSection: {
+        tagline: "የኢትዮጵያውያንን ወደ ዓለም አቀፍ ስራ የሚያገናኝ የታመነ መንገድ።",
+        quickLinks: "ፈጣን አገናኞች",
+        ourServices: "አገልግሎቶች",
+        contact: "አግኙን",
+        applyNow: "መመልከቻ ይጀምሩ",
+        faq: "FAQ",
+        credit: "በSHURUQ Enterprise ተሰራ",
+      },
     },
   },
 
@@ -578,18 +561,13 @@ const resources = {
       contact: "اتصل بنا",
       book: "احجز استشارة",
 
-      // COMMON
-      common: {
-        learnMore: "اعرف المزيد",
-      },
+      common: { learnMore: "اعرف المزيد" },
 
-      // HERO
       heroTitle1: "طريقك الموثوق إلى",
       heroTitle2: "العمل العالمي",
       heroSubtitle:
         "تربط QUBA المواهب الإثيوبية بأصحاب العمل الدوليين الموثوقين مع إجراءات قانونية ودعم ثقافي في كل خطوة.",
 
-      // STATS
       stats: {
         workers: "تم توظيفهم",
         countries: "دول الوجهات",
@@ -597,67 +575,18 @@ const resources = {
         legal: "إجراءات قانونية",
       },
 
-      // PROCESS
       process: {
         kicker: "العملية",
         title: "من التقديم إلى التوظيف بخمس خطوات واضحة",
         steps: {
-          s1: {
-            title: "استشارة ومراجعة الملف",
-            desc: "نقيّم مهاراتك وأهدافك ومدى أهليتك للتوظيف الدولي.",
-          },
-          s2: {
-            title: "مطابقة الوظيفة والتنسيق مع صاحب العمل",
-            desc: "نطابقك مع أصحاب عمل موثوقين ضمن شبكة شركائنا.",
-          },
-          s3: {
-            title: "الوثائق والإجراءات القانونية",
-            desc: "إدارة التأشيرات والعقود والإجراءات الحكومية بالكامل.",
-          },
-          s4: {
-            title: "التحضير قبل السفر",
-            desc: "توجيه وتدريب ثقافي وترتيبات السفر قبل المغادرة.",
-          },
-          s5: {
-            title: "التوظيف والدعم المستمر",
-            desc: "دعم مستمر طوال مدة العقد.",
-          },
+          s1: { title: "استشارة ومراجعة الملف", desc: "نقيّم مهاراتك وأهدافك ومدى أهليتك للتوظيف الدولي." },
+          s2: { title: "مطابقة الوظيفة والتنسيق مع صاحب العمل", desc: "نطابقك مع أصحاب عمل موثوقين ضمن شبكة شركائنا." },
+          s3: { title: "الوثائق والإجراءات القانونية", desc: "إدارة التأشيرات والعقود والإجراءات الحكومية بالكامل." },
+          s4: { title: "التحضير قبل السفر", desc: "توجيه وتدريب ثقافي وترتيبات السفر قبل المغادرة." },
+          s5: { title: "التوظيف والدعم المستمر", desc: "دعم مستمر طوال مدة العقد." },
         },
       },
 
-      // Keep your original object
-      servicesSection: {
-        kicker: "ماذا نقدم",
-        title: "كل ما تحتاجه للانتقال الدولي بنجاح",
-        cards: {
-          overseas: {
-            title: "التوظيف في الخارج",
-            desc: "خدمة شاملة للتوظيف مع أصحاب عمل دوليين موثوقين عبر عدة قطاعات.",
-          },
-          guidance: {
-            title: "إرشاد واستشارات للمرشحين",
-            desc: "نصائح مخصصة ودعم في كل مرحلة من رحلتك.",
-          },
-          employer: {
-            title: "التنسيق مع أصحاب العمل",
-            desc: "تنسيق مباشر مع أصحاب العمل والشركاء المعتمدين.",
-          },
-          legal: {
-            title: "الوثائق والإجراءات القانونية",
-            desc: "التأشيرات والعقود والفحوصات والتصديقات—بشكل قانوني ومتكامل.",
-          },
-          prep: {
-            title: "التحضير قبل السفر",
-            desc: "توجيه وتدريب ثقافي وترتيبات السفر قبل المغادرة.",
-          },
-          support: {
-            title: "الدعم بعد التوظيف",
-            desc: "دعم مستمر طوال مدة العقد وتجديداته عند الحاجة.",
-          },
-        },
-      },
-
-      // dotted keys for Services section
       "services.kicker": "ماذا نقدم",
       "services.title": "كل ما تحتاجه للانتقال الدولي بنجاح",
 
@@ -685,11 +614,9 @@ const resources = {
       "services.cards.support.desc":
         "دعم مستمر طوال مدة العقد وتجديداته عند الحاجة.",
 
-      // DESTINATIONS SECTION
       destinationsSection: {
         title: "أين نوظّف الكفاءات الإثيوبية",
-        subtitle:
-          "شراكات فعّالة مع أصحاب عمل في أكثر من 12 دولة في الخليج وما بعده",
+        subtitle: "شراكات فعّالة مع أصحاب عمل في أكثر من 12 دولة في الخليج وما بعده",
         button: "عرض كل الوجهات",
       },
 
@@ -704,7 +631,6 @@ const resources = {
         lb: "لبنان",
       },
 
-      // ABOUT SECTION
       aboutSection: {
         kicker: "لماذا QUBA",
         title: "لماذا يثق آلاف الإثيوبيين بـ QUBA",
@@ -720,42 +646,15 @@ const resources = {
         },
       },
 
-      // TESTIMONIALS SECTION
       testimonialsSection: {
         title: "عمّال وجدوا طريقهم مع QUBA",
-        t1: {
-          quote:
-            "تكفلت QUBA بكل شيء — الأوراق والعقد وحتى التوجيه. وصلت إلى الرياض وأنا واثق ومستعد.",
-          name: "Selamawit Tadesse",
-          meta: "تم التوظيف في السعودية · عمل منزلي",
-        },
-        t2: {
-          quote:
-            "شرح الفريق كل خطوة بوضوح. لم تكن هناك مفاجآت أو رسوم مخفية. أثق بهم تماماً.",
-          name: "Yonas Bekele",
-          meta: "تم التوظيف في الإمارات · الضيافة",
-        },
-        t3: {
-          quote:
-            "حتى بعد أن بدأت العمل في الدوحة، بقيت QUBA على تواصل. عندما كان لدي سؤال حول العقد، كانوا موجودين.",
-          name: "Hanan Mohammed",
-          meta: "تم التوظيف في قطر · دعم صحي",
-        },
-        t4: {
-          quote:
-            "كل شيء كان قانونياً ومنظماً. العملية كانت واضحة وفريق الدعم يرد بسرعة.",
-          name: "Selamawit Tadesse",
-          meta: "تم التوظيف في السعودية · عمل منزلي",
-        },
-        t5: {
-          quote:
-            "تواصل احترافي وتحقق حقيقي من أصحاب العمل. أنصح بـ QUBA لكل من يتقدم للعمل خارجاً.",
-          name: "Yonas Bekele",
-          meta: "تم التوظيف في الإمارات · الضيافة",
-        },
+        t1: { quote: "تكفلت QUBA بكل شيء — الأوراق والعقد وحتى التوجيه. وصلت إلى الرياض وأنا واثق ومستعد.", name: "Selamawit Tadesse", meta: "تم التوظيف في السعودية · عمل منزلي" },
+        t2: { quote: "شرح الفريق كل خطوة بوضوح. لم تكن هناك مفاجآت أو رسوم مخفية. أثق بهم تماماً.", name: "Yonas Bekele", meta: "تم التوظيف في الإمارات · الضيافة" },
+        t3: { quote: "حتى بعد أن بدأت العمل في الدوحة، بقيت QUBA على تواصل. عندما كان لدي سؤال حول العقد، كانوا موجودين.", name: "Hanan Mohammed", meta: "تم التوظيف في قطر · دعم صحي" },
+        t4: { quote: "كل شيء كان قانونياً ومنظماً. العملية كانت واضحة وفريق الدعم يرد بسرعة.", name: "Selamawit Tadesse", meta: "تم التوظيف في السعودية · عمل منزلي" },
+        t5: { quote: "تواصل احترافي وتحقق حقيقي من أصحاب العمل. أنصح بـ QUBA لكل من يتقدم للعمل خارجاً.", name: "Yonas Bekele", meta: "تم التوظيف في الإمارات · الضيافة" },
       },
 
-      // CONTACT CTA
       contactSection: {
         title: "هل أنت مستعد لبدء مسيرتك المهنية الدولية؟",
         subtitle:
@@ -765,47 +664,21 @@ const resources = {
         whatsapp: "WhatsApp",
       },
 
-      // FAQ
       faqSection: {
         titleLine1: "الأسئلة",
         titleLine2: "الشائعة",
         items: {
-          q1: {
-            q: "هل QUBA وكالة توظيف خارجي مرخصة في إثيوبيا؟",
-            a: "نعم. QUBA وكالة مرخّصة ومسجّلة حكومياً، ونتبع إجراءات قانونية موثّقة لكل عملية توظيف.",
-          },
-          q2: {
-            q: "ما هي المستندات المطلوبة للتقديم؟",
-            a: "عادةً: هوية/جواز (إن وُجد)، سيرة ذاتية، صور، وأي شهادات ذات صلة. قد تختلف المتطلبات حسب الدولة ونوع الوظيفة.",
-          },
-          q3: {
-            q: "كم تستغرق العملية كاملة؟",
-            a: "تختلف المدة حسب الدولة وصاحب العمل، ونقوم بإطلاعك على كل خطوة من الفرز حتى إصدار التأشيرة والسفر.",
-          },
-          q4: {
-            q: "هل توجد رسوم أدفعها مسبقاً؟",
-            a: "نوضح أي تكاليف قبل البدء. لا ندعم الرسوم المخفية ونلتزم بالشفافية.",
-          },
-          q5: {
-            q: "ما الدول المتاحة للعمل عبر QUBA؟",
-            a: "نوفّر فرصاً في دول الخليج وما بعدها حسب الطلب وشراكات أصحاب العمل الموثوقة.",
-          },
-          q6: {
-            q: "ماذا يحدث بعد توظيفي في الخارج؟",
-            a: "يستمر دعمنا بعد التوظيف، بما في ذلك التواصل والإرشاد والمساعدة في التجديدات عند الحاجة.",
-          },
-          q7: {
-            q: "هل يمكنني التقديم بدون خبرة عمل دولية سابقة؟",
-            a: "نعم. العديد من الوظائف لا تتطلب خبرة خارجية. نقيم ملفك ونطابقك مع فرص مناسبة.",
-          },
-          q8: {
-            q: "كيف أتأكد أن عرض العمل حقيقي؟",
-            a: "لا تقبل إلا العروض عبر قنوات QUBA الرسمية. نوفر بيانات صاحب العمل الموثّق والوثائق القانونية لكل عملية توظيف.",
-          },
+          q1: { q: "هل QUBA وكالة توظيف خارجي مرخصة في إثيوبيا؟", a: "نعم. QUBA وكالة مرخّصة ومسجّلة حكومياً، ونتبع إجراءات قانونية موثّقة لكل عملية توظيف." },
+          q2: { q: "ما هي المستندات المطلوبة للتقديم؟", a: "عادةً: هوية/جواز (إن وُجد)، سيرة ذاتية، صور، وأي شهادات ذات صلة." },
+          q3: { q: "كم تستغرق العملية كاملة؟", a: "تختلف المدة حسب الدولة وصاحب العمل، ونقوم بإطلاعك على كل خطوة." },
+          q4: { q: "هل توجد رسوم أدفعها مسبقاً؟", a: "نوضح أي تكاليف قبل البدء. لا ندعم الرسوم المخفية ونلتزم بالشفافية." },
+          q5: { q: "ما الدول المتاحة للعمل عبر QUBA؟", a: "نوفّر فرصاً في دول الخليج وما بعدها حسب الطلب وشراكات أصحاب العمل الموثوقة." },
+          q6: { q: "ماذا يحدث بعد توظيفي في الخارج؟", a: "يستمر دعمنا بعد التوظيف، بما في ذلك التواصل والإرشاد." },
+          q7: { q: "هل يمكنني التقديم بدون خبرة عمل دولية سابقة؟", a: "نعم. العديد من الوظائف لا تتطلب خبرة خارجية." },
+          q8: { q: "كيف أتأكد أن عرض العمل حقيقي؟", a: "لا تقبل إلا العروض عبر قنوات QUBA الرسمية." },
         },
       },
 
-      // APPLY FORM
       applySection: {
         formTitle: "ابدأ طلبك",
         formSubtitle: "املأ النموذج وسيتواصل فريقنا معك خلال 24 ساعة.",
@@ -845,6 +718,17 @@ const resources = {
           whatsappCta: "راسلنا على واتساب →",
         },
       },
+
+      // ✅ FOOTER (AR)
+      footerSection: {
+        tagline: "بوابتك الإثيوبية الموثوقة نحو العمل العالمي.",
+        quickLinks: "روابط سريعة",
+        ourServices: "خدماتنا",
+        contact: "تواصل",
+        applyNow: "قدّم الآن",
+        faq: "الأسئلة الشائعة",
+        credit: "صنع بواسطة SHURUQ Enterprise",
+      },
     },
   },
 };
@@ -856,7 +740,7 @@ i18n.use(initReactI18next).init({
   supportedLngs: ["en", "am", "ar"],
   interpolation: { escapeValue: false },
 
-  // Helps when using dotted keys + mixed structures
+  // important for dotted keys + mixed structures
   ignoreJSONStructure: true,
 });
 
